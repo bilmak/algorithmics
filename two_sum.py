@@ -17,4 +17,15 @@ def twoSum(nums: list[int], target: int) -> list[int]:
 
 
 
-twoSum([3,2,4], 6)
+#twoSum([3,2,4], 6)
+
+def twoSum_second(nums:list[int], target:int)->list[int]:
+    output:list=[]
+    n = len(nums)
+    for i in range(n):
+        for j in range(n):
+            if nums[i]+nums[j]==target:
+                output.append(i)
+                output.append(j)
+                return output
+    return []
