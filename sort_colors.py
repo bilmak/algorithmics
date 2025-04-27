@@ -9,7 +9,7 @@
 # Input: nums = [2,0,2,1,1,0]
 # Output: [0,0,1,1,2,2]
 
-def sort_colors(nums: list[int]):
+def sort_colors_bubble_sort(nums: list[int]):
     if len(nums) <= 1:
         return nums
     pivot = nums[0]
@@ -27,7 +27,7 @@ def sort_colors(nums: list[int]):
 print(sort_colors([2, 0, 2, 1, 1, 0]))
 
 
-def sort_colors_second(nums: list[int]) ->None:
+def sort_colors_selection_sort(nums: list[int]) ->None:
     if len(nums) <= 1:
         return 
 
