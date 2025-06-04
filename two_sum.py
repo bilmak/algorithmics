@@ -27,3 +27,9 @@ def two(nums: list[int], target:int)-> list[int]:
     return []
 
 
+
+def summm(nums:list, target):
+    for k, v in nums:
+        for i, y in nums:
+            if v+y==target:
+                return k, i
